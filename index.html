@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Papers game</title>
+  </head>
+  <body>
+    <h1>Papers game</h1>
+    <div class="visitor">
+      <img id="avatar" src="img/avatars/avatar_0.svg" alt="" />
+    </div>
+    <footer>
+      <div id="window-next-applicant" class="queue">
+        <div class="queue queue-left">
+          <h2>Queue</h2>
+          <span id="queue-left">--</span>
+        </div>
+        <div class="queue queue-current">
+          <h2>Current</h2>
+          <span id="queue-current">--</span>
+        </div>
+        <div class="queue queue-done">
+          <h2>Processed</h2>
+          <span id="queue-processed">--</span>
+        </div>
+      </div>
+      <div class="window"></div>
+
+      <div class="window-bottom-left"></div>
+      <div class="window-bottom-right">
+        <button id="button-next">NEXT</button>
+      </div>
+      <div class="window-bottom-center"></div>
+      <div class="monitor" id="desk">
+        <div id="application">
+          <h3>APPLICATION</h3>
+          <img id="photo-application" src="img/avatars/avatar_0.svg" alt="" />
+          <p>NAME:</p>
+          <span id="name-application"></span>
+          <p>BORN:</p>
+          <span id="born-application"></span>
+          <p>COUNTRY:</p>
+          <span id="country-application"></span>
+          <p>ENTRY DATE:</p>
+          <span id="entry-date-application"></span>
+        </div>
+
+        <div id="passport">
+          <h3>PASSPORT</h3>
+          <div class="passport-img-bkg">
+            <img id="photo-pass" src="img/avatars/avatar_0.svg" alt="" />
+          </div>
+          <p>NAME:</p>
+          <span id="name-pass"></span>
+          <p>BORN:</p>
+          <span id="born-pass"></span>
+          <p>COUNTRY:</p>
+          <span id="country-pass"></span>
+          <p>VALID UNTIL:</p>
+          <span id="valid-pass-date"></span>
+        </div>
+        <div class="desk-buttons">
+          <button id="decline">DECLINE!</button>
+          <button id="approve">APPROVE!</button>
+        </div>
+      </div>
+    </footer>
+    <div class="stats">
+      <h2 class="stats-title">Game stats</h2>
+      <div class="stat">
+        <h2>Approved</h2>
+        <span id="approved">0</span>
+      </div>
+      <div class="stat">
+        <h2>Declined</h2>
+        <span id="declined">0</span>
+      </div>
+      <div class="stat">
+        <h2>Accuracy</h2>
+        <span id="accuracy">100.00%</span>
+      </div>
+
+      <h3 class="stats-title">Game log</h3>
+      <div class="game-log"></div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
